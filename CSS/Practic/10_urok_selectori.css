@@ -1,0 +1,6 @@
+.block1 ~ div > span > input[type="text"]{
+	background: red;
+}
+.block1 ~ div > span > span * {
+	background: blue;
+}

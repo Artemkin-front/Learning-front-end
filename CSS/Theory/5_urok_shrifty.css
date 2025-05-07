@@ -1,0 +1,19 @@
+/* 5 урок по CSS шрифты */
+/* у разных шрифтов есть своя поддержка браузеров. 
+eot, woff, woff2, ttf.
+поддержку шрифтов можно посмотреть на специальном сайте*/
+/* для разных браузеров можно подключать разные шрифты */
+div{
+	font-size: 20px; /* изменяет размер шрифта (по стандарту 16px) */
+	font-family:Roboto; /* Изменяет сам шрифт можно указать несколько шрифтов через запятую. Либо-же указать семейство шрифтов, например sans-serif*/
+	font-weight:600; /* задает толщину шрифта */
+	font-style: Italic; /* Задает стиль шрифта(наклонный,жирный и тд.) */
+
+}
+@font-face{
+	font-family:"Roboto";
+	src:url('шрифты/RobotoCondensed-VariableFont_wght.ttf') format('truetype'), url('шрифты/RobotoCondensed-VariableFont_wght.woff2') format('woff2');
+	/*Подключение собственного шрифта и его формат
+	truetype - ttf, woff, woff2,embedded-opentype - eot*/
+
+}

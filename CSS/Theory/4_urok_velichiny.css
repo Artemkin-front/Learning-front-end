@@ -1,0 +1,42 @@
+body{
+	width:100vw;
+	height:100vh;
+	margin:0px;/* устанавливает отступы */
+}
+
+.header{
+	background:#999;
+	/*width:70%;/* устанавливает ширину элемента px % vw*/
+	/*height:50%;/* устанавливает высоту элемента px % vh*/
+	height:15%;
+}
+
+
+.aside{
+	display:inline-block;
+	background:#555;
+	width:28%;
+	height: 80%;
+}
+
+.main{
+	background:#333;
+	width:72%;
+	height:80%;
+	display:inline-block;/* Чтобы все влезло нужно убрать разрыв строки в html */
+}
+/*div{
+	background:red;
+	display: inline;  позволяет задать тип элемента, блочный или строчный
+	inline - строчный
+	block - блочный
+	inline-block - строчный, с сохранением ширины 
+}*/
+.footer{
+	background: #000;
+	color: #FFF;
+	display:inline-block;
+	width: 100%;
+	height:5%;
+
+}

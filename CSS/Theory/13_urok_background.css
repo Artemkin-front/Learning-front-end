@@ -1,0 +1,45 @@
+body{
+	background: ;
+	
+}
+.test{
+	color: black;
+	height: 200px;
+	background: url('../../../Photos/Cat.ico');/* Данная команда позволяет вставить картинку, или же можно воспользоваться свойством background-image */
+	background-repeat:repeat; /* При вставке картинки она зацикливается(повторяется) и для того чтобы этим управлять есть свойство background-repeat со значениями: no-repeat - не повторять, repeat-x(y) повторять по какой то из осей */
+}
+.test2{
+	margin-top: 50px;
+	color: blueviolet;
+	height: 200px;
+	background: url('../../../Photos/Cat.ico');
+	background-repeat: space ; /* значение space также делает картинки цикличными, но в отличии от repeat они не обрезаются по краям, а встают только полные изображения */
+}
+.test3{
+	background: blueviolet;
+	background-image: url('../../../Photos/Cat.ico');
+	height: 300px;
+	background-repeat: no-repeat;
+	background-position: center; /* Данное свойство позволяет изменять положение объекта который мы вставляем при изменении позиции повторяющихся элементов элементы начинают повторятся с места которое мы указали */
+}
+.test4{
+	background-image: url('../../../Photos/Cat.ico');
+	height: 1500px;
+	background-repeat: space;
+	margin-top:50px;
+	background-position: center;
+	background-attachment: fixed;/* Свойство которое задает значение будут ли скроллится наши изображения fixed- задает фиксированное изображение, а scroll - не фиксированное */
+}
+.test5{
+	background: gray;
+	background-image: url('../../../Photos/Ochki.jpg');
+	height: 1000px;
+	background-repeat: no-repeat;
+	background-size: 400px; /* позволяет увеличть картинку до нужных размеров есть 2 значения: contain-растягивает или сжимает картинку, пока та не коснется одной из границ блока, cover растягивает картинку на полную ширину сохраняя пропорции, из-за чего картинка может выходить за пределы контейнера и будет обрезана по его границам */
+	background-origin: content-box; /* Позволяет применить к нашему заднему фону свойства элементов в нутри контейнера, например padding */
+}
+.test6{
+	height: 500px;
+	width:100vw;
+	background: linear-gradient( 220deg, red , blue 40%, green); /* СВОЙСТВО КОТОРОЕ ПОЗВОЛЯЕТ ЗАДАТЬ градиент от одного цвета к другому, перед цветами можно задавать правила по которым будет сделан данный градиент */
+}

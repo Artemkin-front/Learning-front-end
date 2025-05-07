@@ -1,0 +1,55 @@
+body{
+	margin: 0;
+	width: 100vw;
+	height:100vh;
+
+}
+.parent{
+	background:#bbb;
+	width:100%;
+	height: 600px;
+}
+.parent div {
+	margin:5px;
+	width: 100px;
+	padding-top:5px;
+	color:white;
+	text-align:center;
+	border-radius:10px;
+}.child_1{
+	background: #660000;
+}.child_2{
+	background:#990066;
+}.child_3{
+	background: #333366;
+}.child_4{
+	background: #009999;
+}.child_5{
+	background: #009933;
+}
+
+
+
+
+
+.parent{
+	display: flex;
+	/*flex-direction: column; меняет направление оси на которой находятся наш контент из-за этого justify-content работает по вертикали, а align-items по горизонтали */
+	/*justify-content:space-between; /*space-around-задает одинаковые отступы снаружи контента*/
+	/*align-items: center; /*задает высоту контента по вертикали внутри какого-то контейнера flex-start/end, center*/
+	/* flex-wrap:nowrap; переносит контент на следующую строчку если он не умещается на экране wrap - переносит, nowrap-не переносить,  wrap-reverse-переносить, но в обратном порядке  */
+	/*flex-direction: row-reverse; column-reverse меняет направление оси на которой находится контент на зеркально-противоположное*/
+
+}
+/*.child_1{
+	align-self:flex-start; /*переносит наш контейнер в нужное место
+}
+.child_3{
+	align-self:flex-end;
+}*/
+/* align-content  указывает где дожны находиться элементы в случае их переноса (работает только с несколькими строками значения как у justify-content*/
+/* order - меняет порядок элементов в ряду элементов по умолчаню значение каждого элемента 0 */
+/* flex-basis - указывает ширину самих контейнеров при flex-direction:column; указывает высоту*/
+/* flex-shrink указывает на то, могут ли элементы сжиматься при уменьшении экрана значение 1-да 0-нет чем больше число, тем быстрее будет сжиматься элемент*/
+/* flex-grow:1/2/3... указывает на то, могут ли элементы расширятся при увеличении размера окна при увеличени числа элемент с наибольши числом увеличивается больше остальных в соответствии с пропорцией*/
+/* flex: 1 0 100px;- заменяет 3 других свойства  1-flex-grow 2-flex-shrink 3-flex-basis*/

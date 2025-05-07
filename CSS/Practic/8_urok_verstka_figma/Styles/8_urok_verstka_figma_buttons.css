@@ -1,0 +1,37 @@
+.primary,
+.secondary{
+	color:white;
+	font-family:RobotoM, sans-serif;
+	Font-size:17px;
+	font-weight: 500;
+	cursor: pointer;
+}
+
+.primary{
+	background: #4452FE;
+	border:none;
+	padding: 20px 40px;
+
+}
+.primary:hover {
+	background: #1722ad;
+}
+.secondary{
+	padding: 19px 40px;
+	border: 1px solid white;
+	background:transparent;
+}
+.secondary:hover{
+	color:#bdbdbd;
+	border-color:#bdbdbd;
+}
+
+.secondary:focus{
+	color:#bdbdbd;
+	border-color:#bdbdbd;
+	outline:none;
+}
+.primary:focus{
+	background: #1722ad;
+	outline:none;
+}

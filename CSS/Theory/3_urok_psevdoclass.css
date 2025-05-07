@@ -1,0 +1,54 @@
+.first_span{
+	/*border-width: 2px;
+	border-style:solid;
+	border-color:rgb(255,0,0); 
+	Равносильно ниженаписанному*/ 
+	border:1px dashed rgb(0, 0, 150);
+}
+/* Для вывода рамки с одной из сторон надо указать с какой стороны нужна рамка
+top - верх
+bottom - низ
+right - право
+left - лево
+ */
+.second_span{
+	border:3px solid #ff0000;
+	border-left:3px solid rgba( 200, 120, 0, 1);
+	cursor:pointer;/* default pointer видоизменяет курсор когда мы наводим на объект */
+}
+.thrid_span{
+	border: 1px solid black;
+	border-top-right-radius:4px;
+	border-bottom-left-radius:4px;
+}
+.first_div{
+	text-align:center;/* left right center перемещает текст внутри блока*/
+	background:red;
+	opacity: .6;/* прозрачность */
+
+
+}
+/* Псевдоклассы hover нужен для выделения элемента, когда мы на него наводим мышкой
+focus - для выделения элемента когда мы прикходим к нему через клавиатуру
+строятся они по типу: 
+селектор: псевдокласс {
+	свойство: значение;
+}
+ */
+.element:hover{
+	background:red;
+	border:2px solid black;
+	cursor: pointer;
+}
+.first_span:focus{
+	border:2px solid black;
+}
+.button:focus{
+	outline: none;/* отвечает за выделеление элемента, который выбирается с клавиатуры */
+	color:red;
+
+}
+.button:hover{
+	background:blueviolet;
+	color:pink;
+}
