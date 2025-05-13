@@ -1,0 +1,69 @@
+body{
+	margin:0;
+}
+.container{
+	Font-size:60px;
+	width:100%;
+	height: 500px;
+	background-color: tomato;
+}
+/*@media Условие{
+	.container{
+	bacground-color: blue;     - Пример написания медиа выражений
+	}
+} */
+/*Типы носителя
+@media  print{
+	.container{
+		Font-size:10px;
+		width:100%;
+		height: 500px;
+		background-color: tomato;
+	}
+}
+ 
+print - Изменяет параметры для страницы которую будут печатать 
+screen - работает для мониторов компьютеров*/
+/* Характеристики: width, height aspect-ratio, orientation(partant, landscape)
+1. Width, height -  Указываются характеристи ширины и высоты, при которых будет менятся наша верстка
+@media (характеристики) {
+	Задаваемые параметры
+}
+
+@media (max-width: 900px/* Свойства будут применяться пока ширина не будет более 900px ){
+	.container{
+		font-size:30px;
+	}
+}
+@media (min-width:900px/* Свойства будут применяться если ширина больше 900 px ){
+	.container{
+		background-color: aqua;
+		font-size:60px;
+	}
+}
+/*@media (aspect-ratio: 4/3 Стили применяются если совпадает соотношение сторон ){
+	.container{
+		bacground-color:green;
+	}
+}*/
+/* @media(orientation:portait Стили будут примененны при портретной ориентации устройства){
+	.container{
+		bacground:yellow;
+	}
+} */
+/* Логические операторы - используются для применения нескольких медиа запросов */
+@media (min-width: 400px) and (max-width:900px) , (max-height:400px){ /* Наши измененния будут отоброжаться если ширина экрона от 400-900px включительно при использовании или ставится запятая, обычно связывают две различные характеристики*/
+	.container{
+		font-size: 30px;
+	}
+}
+/* Оператор not */
+.screen{
+	display: none;
+}
+@media not screen {
+	.screen{
+		display: block;
+	}
+}
+/* https://html5book.ru/css3-mediazaprosy/ */
