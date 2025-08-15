@@ -1,0 +1,33 @@
+/* Данное свойство позволяет применять анимации которые выполняются на видеокарте, поэтому они выполняются быстрее и плавнее */
+body{
+	display: flex;
+	margin: 0;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+.circle{
+	width:200px;
+	height: 200px;
+	/*border-radius: 100%;*/
+	background-color: red;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+/*.circle{
+	transform: rotate(0deg); Данная функция поворачивает круг на заданное количество градусов 
+	animation: 1s linear infinite rotate;
+}
+@keyframes rotate{
+	to {
+		transform: rotate(360deg);
+	}
+}*/
+/*.circle{
+	transform: translate(100px, 100px); Данное свойство позволяет переносить наш объект по осям координат через запятую сначала ось ординат а после ось абсцисс translateX(Y) - позволяет перемещать объект только по одной из выбранных осей
+}*/
+.circle{
+	transform: skewX(100deg);/* Данное свойство нужно для искривления объекта */
+}
