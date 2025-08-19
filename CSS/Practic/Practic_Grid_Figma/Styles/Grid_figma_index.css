@@ -20,8 +20,19 @@
 	--color-ligth-red:#FF7675;
 
 	--color-dark-purple:#6C5CE7;
-	--color-light-purple:#6C5CE7;
+	--color-light-purple:#A29BFE;
 	
 	--color-dark-pink:#E84393;
 	--color-light-pink:#FD79A8;
+
+	--font-famyly-b:InterB, sans-serif;
+	--font-famyly-m:InterM, sans-serif;
+	--font-famyly-r:InterR, sans-serif;
+	--font-famyly-l:InterL, sans-serif;
+	--animation-function:  ease;
+	--animation-speed:.5s;
+	--animation: var(--animation-function) var(--animation-speed);
+}
+body{
+	margin: 0;
 }
