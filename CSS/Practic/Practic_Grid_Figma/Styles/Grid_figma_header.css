@@ -1,0 +1,57 @@
+header{
+	display: flex;
+	height: 96px;
+	width: 100vw;
+	justify-content: center;
+	align-items: center;
+	box-shadow:0px 2px 4px rgba(38, 50, 56, .16), 0px 4px 8px rgba(38, 50, 56, .08);
+}
+
+.header_button{
+	height: 64px;
+	width: 170px;
+}
+
+.name_logo{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.header_logo_title{
+	font-size: 48px;
+	font-family: var(--font-famyly-b);
+}
+
+.header_nav{
+	margin: 0px 100px;
+	display: flex;
+	align-items: center;
+}
+
+.heder_link{
+	color: var(--color-dark-purple);
+	font-family: var(--font-famyly-r);
+	text-decoration: none;
+	font-size: 18px;
+	transition: var(--animation);
+}
+.heder_link:hover,
+.heder_link:focus{
+	color: var(--color-light-purple);
+	outline: none;
+}
+
+.heder_link_active{
+	color: var(--color-black);
+	font-family: var(--font-famyly-b);
+	font-size: 18px;
+}
+
+.header_point{
+	background-color: var(--color-dark-yellow);
+	width: 9px;
+	height: 9px;
+	border-radius: 100%;
+	margin: 0px 16px;
+}
