@@ -1,5 +1,5 @@
-//Р›Р°Р±РѕСЂР°С‚РѕСЂРЅР°СЏ СЂР°Р±РѕС‚Р° в„–2
-// РџСЂРѕРіСЂР°РјРјРёСЂРѕРІР°РЅРёРµ Р°Р»РіРѕСЂРёС‚РјРѕРІ Рё СЂР°Р·РІРµС‚РІР»РµРЅРЅРѕР№ СЃС‚СЂСѓРєС‚СѓСЂС‹
+//Лабораторная работа №2
+// Программирование алгоритмов и разветвленной структуры
 #include "iostream"
 using std::cout;
 using std::cin;
@@ -7,23 +7,24 @@ using std::endl;
 
 void main()
 {
+  setlocale(LC_ALL, "Russian_Russia.1251");
     double x,y;
-    cout << "Vvedite coordinaty x y" << endl;
+    cout << "Введите координаты точки x y" << endl;
     cin >> x >> y;
     
       if ((y>0.7) || (y<(-0.7)) && (x*x+y*y<1))
       {
-        cout << "tochka ne vhodit" << endl;
+        cout << "Точка не принадлежит заштрихованной области" << endl;
       } else
       {
         if ((y<0.7) && (y>(-0.7)) && (x*x+y*y<1))
         {
-            cout << "tochka vnutri" << endl;
+            cout << "Точка принадлежит заштрихованной области" << endl;
         } else
         {
             if ((y==0.7) || (y==(-0.7)) && (x*x+y*y<1))
             {
-                cout << "tochka na granice" << endl;
+                cout << "Точка на границе заштрихованной области" << endl;
             }
         }
       }
