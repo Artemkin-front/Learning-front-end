@@ -1,0 +1,43 @@
+#Firstnum,
+#Secondnum  {
+    padding: 15px;
+    display: flex;
+    border-radius: 30px;
+    margin-top: 10px;
+}
+html {
+    display: flex;
+    justify-content: center;
+}
+.button {
+    padding:10px 20px 10px 20px;
+    border-radius: 30px;
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+    border: none;
+    margin-top: 10px;
+    color: blueviolet;
+    cursor: pointer;
+    transition: ease 3s;
+}
+.button:hover {
+    background-color: rgb(208, 208, 208);
+}
+.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.numbers {
+    display: flex;
+    flex-direction: column;
+}
+.Enter_x, 
+.Enter_y {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+span { 
+    margin-right: 20px;
+}
