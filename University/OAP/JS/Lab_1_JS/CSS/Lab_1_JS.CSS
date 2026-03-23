@@ -41,3 +41,27 @@ html {
 span { 
     margin-right: 20px;
 }
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main_information{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+.main_header{
+    font-size: 20px;
+    margin-top: 50px;
+}
+.name {
+    display: flex;
+    justify-content: flex-end;
+}
+.codeHTML{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

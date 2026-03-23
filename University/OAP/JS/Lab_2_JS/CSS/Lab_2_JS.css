@@ -1,0 +1,28 @@
+.div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.div > label {
+    margin:10px;
+}
+.div > span{
+    margin: 10px;
+}
+.div > input{
+    padding: 10px;
+    border-radius: 20px;
+    border-color: black;
+    background-color: white;
+    margin: 10px;
+}
+.div > span{
+    margin-right: 20px;
+}
+.button:focus,
+.button:hover{
+    transition: ease 1s;
+    background-color: rgb(209, 209, 209);
+    cursor: pointer;
+}

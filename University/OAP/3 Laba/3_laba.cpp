@@ -41,4 +41,5 @@ void main()
     s =  log((x+sqrt(x*x+1)));
     cout << "\nПриблизительное значение arsh(x) = " << F;
     cout << "\nЗначение arsh(x) = " << s;
+    system("pause");
 }
