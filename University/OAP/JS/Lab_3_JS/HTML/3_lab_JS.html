@@ -3,9 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3 Лабараторная работа по JS</title>
+    <title>3 Лабораторная работа по JS</title>
     <link rel="stylesheet"  type="text/css" href="../CSS/3_lab_JS.css">
 </head>
+<div class="Task">
+    Сделайте поле ввода(числовое), рядом расположите кнопки, одну для добавления, одну для удаления. При
+добавлении, число из поля ввода добавляется в массив, при удалении удаляется из него по индексу
+который ввели в поле ввода. Чтобы демонстрировать результат изменения массива под полем ввода и
+кнопками расположите блоки которые будут визуализировать массив данных.
+Под визуализацией массива данных расположите третью кнопку с задачей по варианту:
+<br>
+<br>
+16 Найти четные повторяющийся элементы(выведите на страницу отдельным блоком)
+</div>
+<div class="firstNum">
+    <input type="number" value="0" id="addNumArr">
+    <span>Добавить чило в массив</span>
+    <input type="button" value="Добавить" onclick="addDiv()" class="addbutton">
+
+</div>
+<div class="secNum">
+    <input type="number" value="0" id="delNum">
+    <span>Удалить чило из массива по индексу</span>
+    <input type="button" value="Удалить" onclick="delDiv()" class="delbutton">
+
+</div>
+<div class="arr">
+</div>
+<div class="checkChet"></div>
 <body>
 <script src="../JS/3_lab_JS.js"></script>
 </body>

@@ -1,0 +1,62 @@
+#addNumArr,
+#delNum {
+    border-radius: 20px;
+    border-color: aqua;
+    padding: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.firstNum,
+.secNum{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    font-family:Helvetica, sans-serif;
+    font-weight: 700;
+}
+.addbutton,
+.delbutton{
+    border: none;
+    border-radius: 20px;
+    background-color: chartreuse;
+    transition: 2s;
+    margin-left: 10px;
+}
+.delbutton{
+    background-color: tomato;
+}
+.addbutton:hover {
+    background-color: green;
+    cursor: pointer;
+}
+.delbutton:hover{
+    background-color: red;
+    cursor: pointer;
+}
+.Task{
+    border-bottom:dashed 3px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 10px;
+    margin-top: 20px;
+}
+.arr,
+.checkChet{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.num,
+.chet{
+    background-color: mediumpurple;
+    padding: 10px;
+    border-radius: 5px;
+}
