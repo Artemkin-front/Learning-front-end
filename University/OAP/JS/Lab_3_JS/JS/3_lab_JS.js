@@ -6,6 +6,7 @@ let arr = document.querySelector(".arr");
 let checkch = document.querySelector(".checkChet");
 let Arr = [];
 let buf = [];
+let buf2 =[];
 let povtorArr = [];
 function addDiv(){
     let addiv = document.createElement("div");
@@ -43,18 +44,27 @@ function checkchet(){
         }
     }
 }
-buf = Arr;
 function checkpovtor(){
+    buf = chetArr.slice();
     for (let j = 0;buf.length > 0; j++) {
         for (let s = 1;s <= buf.length; s++) {
             if(buf[0] == buf[s]){
-                povtorArr.push(buf[s]);
+                buf2.push(buf[s]);
                 buf.splice(s,1);
-                s--;
+                
             } else {
                 buf.splice(0,1);
-            }
+            }   
+            
         }
     }
+    console.log(buf.length);
+    console.log(buf2);
+    console.log(povtorArr)
+}
+function sdsd(){
+    console.log
+    buf = Arr.slice();
+    console.log(Arr);
     console.log(buf);
 }
