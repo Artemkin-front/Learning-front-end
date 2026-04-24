@@ -4,6 +4,7 @@ let i = 0;
 let chetArr = [];
 let arr = document.querySelector(".arr");
 let checkch = document.querySelector(".checkChet");
+let povtor = document.querySelector(".povtor");
 let Arr = [];
 let buf = [];
 let buf2 =[];
@@ -28,10 +29,12 @@ function delDiv(){
     i--;
     checkchet();
 }
-let p = 0;
+
 function checkchet(){
+    let p = 0;
     let delcheck = Array.from(document.querySelectorAll(".chet"));
     delcheck.forEach(element => {element.remove()});
+    chetArr.splice(0,chetArr.length);
     for (let j = 0; j <= Arr.length;j++) {
        if ((Arr[j] % 2 )== 0){
             let addiv = document.createElement("div");
@@ -43,28 +46,42 @@ function checkchet(){
             p++;
         }
     }
+    console.log(chetArr);
+    checkpovtor();
 }
 function checkpovtor(){
+    let delcheck = Array.from(document.querySelectorAll(".chetPovtor"));
+    delcheck.forEach(element => {element.remove()});
     buf = chetArr.slice();
+    buf2.splice(0,buf2.length);
     for (let j = 0;buf.length > 0; j++) {
         for (let s = 1;s <= buf.length; s++) {
             if(buf[0] == buf[s]){
                 buf2.push(buf[s]);
-                buf.splice(s,1);
-                
-            } else {
-                buf.splice(0,1);
-            }   
-            
+                povtorArr.push(s);
+            }}
+             if (povtorArr.length>0){
+            buf2.push(buf[0]);
+            buf.splice(0,1);
+            console.log(povtorArr);
+            console.log(buf);
+            }
+        for (let c = 1;povtorArr.length>0;c++ ){
+            let m = povtorArr[0]-c;
+            buf.splice(m,1);
+            povtorArr.splice(0,1);
+        }
+         if ((povtorArr.length == 0) || buf.length > 0){
+            buf.splice(0,1);
         }
     }
-    console.log(buf.length);
-    console.log(buf2);
-    console.log(povtorArr)
+        if (buf2.length>0){
+            for (let d = 0; d<buf2.length;d++){
+            let addiv = document.createElement("div");
+            povtor.append(addiv);
+            addiv.innerText = buf2[d];
+            addiv.className = "chetPovtor";
+        }
+    }
 }
-function sdsd(){
-    console.log
-    buf = Arr.slice();
-    console.log(Arr);
-    console.log(buf);
-}
+

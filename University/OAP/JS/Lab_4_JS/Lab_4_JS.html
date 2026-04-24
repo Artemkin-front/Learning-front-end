@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 Лабораторная работа по JS</title>
+    <link rel="stylesheet"  type="text/css" href="../Lab_4_JS/Lab_4_JS.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="Task">Цель работы - ознакомится с различными видами сортировок, получить практические навыки их
+использования
+Данная работа базируется на основе результатов работы 10, то есть для этой работы должна быть
+страница на которой должен быть список блоков div с цифрами и кнопки для добавления числа в список
+блоков(в виде нового блока div) и удаления их списка блоков. По варианту необходимо будет реализовать
+алгоритмы сортировки, добавив соответствующие кнопки на страницы.
+Рекомендация: создайте кнопку для рандомной генерации n-ого кол-ва элементов, будет проще
+тестировать.</div>
+<div class="Task">Вариант 5:
+<br>1.Быстрая сортировка(разбиение Ломуто).<br>
+2.Сортировка Шелла.</div>
+<div class="firstNum">
+    <input type="number" value="0" id="addNumArr">
+    <span>Добавить чило в массив</span>
+    <input type="button" value="Добавить" onclick="addDiv()" class="addbutton">
+
+</div>
+<div class="secNum">
+    <input type="number" value="0" id="delNum">
+    <span>Удалить чило из массива по индексу</span>
+    <input type="button" value="Удалить" onclick="delDiv()" class="delbutton">
+
+</div>
+<div class="arr">
+</div>
+<script src="../Lab_4_JS/Lab_4_JS.js"></script>
+</body>
+</html>
